@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+
+<head>
+    <script src="settings.js"></script>
+    <style>
+        body {
+            overflow-x: hidden;
+            width: 250px;
+        }
+
+        input {
+            width: 250px;
+            margin-bottom: 10px;
+            font: normal 12px/1.5 menlo, "andale mono", "courier new", sans-serif;
+        }
+
+        input.blah {
+            width: 25px;
+        }
+
+        img {
+            margin: 5px;
+            border: 2px solid black;
+            vertical-align: middle;
+            width: 75px;
+            height: 75px;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="text-align: center;">
+        <h1>SimplePass</h1>
+        <hr>
+        <h4 style="margin-bottom: 10px">Set Master Password</h4>
+        <form>
+            <input type="text" id="password" placeholder="minimum 32 characters">
+            <p style="display:inline" id="count">character count: 0 / 32</p>
+            <button id="button">set password</button>
+        </form>
+    </div>
+    <br>
+    <div>
+        <h4>Password type:</h4>
+        <select id="defaultpaste">
+            <option value="default" id="select_default">complex</option>
+            <option value="simple" id="select_simple">without special characters</option>
+            <option value="passphrase" id="select_passphrase">passphrase</option>
+        </select>
+    </div>
+    <br>
+    <button id="backbutton">back</button>
+    </div>
+</body>
+
+</html>
